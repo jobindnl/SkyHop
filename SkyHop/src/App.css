@@ -1,0 +1,12 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(36, 61, 107); /* used color picker to pick the color for the rest of the font in the page */
+  height: 100%;
+  width: 100%;
+}
+
+.entry-point {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
