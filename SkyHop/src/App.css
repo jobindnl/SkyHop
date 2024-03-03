@@ -12,5 +12,12 @@
 } */
 
 #modal {
-  color: rebeccapurple;
+  margin: 5px;
+  display: flex;
+
+}
+
+.title {
+  font-size: xx-large;
+  font-weight: bold;
 }

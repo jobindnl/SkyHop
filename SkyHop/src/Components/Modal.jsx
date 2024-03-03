@@ -1,4 +1,5 @@
 import ReactModal from 'react-modal';
+import Footer from './Footer'
 
 const Modal = () => {
 
@@ -19,10 +20,14 @@ const Modal = () => {
       style={customStyles}
       id={'modal'}
     >
-      <p>Testing</p>
-      <p>Testing</p>
-      <p>Testing</p>
-      <p>Testing</p>
+      <div id='modal-close'>+</div>
+      <div className='main-content'>
+        <div className='title'>
+          <p>Document Upload</p>
+        </div>
+        <div className='body'>body</div>
+        <Footer />
+      </div>
     </ReactModal>
   )
 }
