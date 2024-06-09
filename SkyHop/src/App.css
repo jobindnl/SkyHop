@@ -14,3 +14,27 @@
 #modal {
   color: rebeccapurple;
 }
+
+.div-1 {
+  display: flex;
+  align-items: flex-start;
+}
+
+.close {
+  border: 1px solid rgb(36, 61, 107);
+  padding: 5px;
+  border-radius: 5px;
+  background: rgb(36, 61, 107);
+  color: white;
+}
+
+.close, .main-body {
+  margin: 10px;
+}
+
+.title {
+  font-weight: bolder;
+  font-size: 25px;
+  border-bottom: solid rgb(234, 234, 234) 1px;
+  padding-bottom: 10px;
+}

@@ -1,4 +1,5 @@
 import ReactModal from 'react-modal';
+import Body from './Body';
 
 const Modal = () => {
 
@@ -19,10 +20,10 @@ const Modal = () => {
       style={customStyles}
       id={'modal'}
     >
-      <p>Testing</p>
-      <p>Testing</p>
-      <p>Testing</p>
-      <p>Testing</p>
+      <div className="div-1">
+        <div className="close">+</div>
+        <Body />
+      </div>
     </ReactModal>
   )
 }
