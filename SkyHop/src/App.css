@@ -97,6 +97,15 @@ select {
   font-weight: bold;
 }
 
+.elapsed-data>p {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.elapsed-dates {
+  color: rgb(96, 171, 140);
+}
+
 .drop-zone-description {
   font-size: 12px;
 }

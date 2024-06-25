@@ -1,6 +1,7 @@
 import Footer from "./Footer"
 import DropdownNameInput from "./DropdownNameInput"
 import SelectFile from "./SelectFile"
+import ElapsedData from "./ElapsedData"
 
 const Body = () => {
 
@@ -11,6 +12,7 @@ const Body = () => {
         <div className="left">
           <DropdownNameInput />
           <SelectFile />
+          <ElapsedData />
         </div>
         <div className="right">
           <p>testing</p>
