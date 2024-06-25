@@ -1,12 +1,10 @@
 const SelectFile = () => {
   const dropHandler = (e) => {
     e.preventDefault()
-    console.log(e)
   }
 
   const dragOverHandler = (e) => {
     e.preventDefault()
-    console.log(e)
   }
 
   return (
