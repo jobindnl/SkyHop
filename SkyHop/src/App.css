@@ -92,8 +92,13 @@ select {
   width: 40px;
 }
 
+.select-file-title {
+  font-size: 12px;
+  font-weight: bold;
+}
+
 .drop-zone-description {
-  font-size: 13px;
+  font-size: 12px;
 }
 
 #select-file-input {
