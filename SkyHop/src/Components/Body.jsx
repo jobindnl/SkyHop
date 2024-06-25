@@ -7,7 +7,9 @@ const Body = () => {
     <div className="main-body">
       <p className="title" >Document Upload</p>
       <div className="logic-body">
-        <DropdownNameInput />
+        <div className="left">
+          <DropdownNameInput />
+        </div>
         <div className="right">
           <p>testing</p>
         </div>

@@ -13,6 +13,7 @@
 
 #modal {
   color: rebeccapurple;
+  width: 60%;
 }
 
 .div-1 {
@@ -22,7 +23,7 @@
 
 .logic-body {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .close {
