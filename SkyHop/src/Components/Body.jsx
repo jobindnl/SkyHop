@@ -2,6 +2,7 @@ import Footer from "./Footer"
 import DropdownNameInput from "./DropdownNameInput"
 import SelectFile from "./SelectFile"
 import ElapsedData from "./ElapsedData"
+import ToleranceWindow from "./ToleranceWindow"
 
 const Body = () => {
 
@@ -13,6 +14,7 @@ const Body = () => {
           <DropdownNameInput />
           <SelectFile />
           <ElapsedData />
+          <ToleranceWindow />
         </div>
         <div className="right">
           <p>testing</p>
