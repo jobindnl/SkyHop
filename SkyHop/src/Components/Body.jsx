@@ -1,5 +1,6 @@
 import Footer from "./Footer"
 import DropdownNameInput from "./DropdownNameInput"
+import SelectFile from "./SelectFile"
 
 const Body = () => {
 
@@ -9,6 +10,7 @@ const Body = () => {
       <div className="logic-body">
         <div className="left">
           <DropdownNameInput />
+          <SelectFile />
         </div>
         <div className="right">
           <p>testing</p>

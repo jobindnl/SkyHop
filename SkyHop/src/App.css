@@ -72,6 +72,29 @@ select {
   padding-bottom: 10px;
 }
 
+.drop-zone-wrapper {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.drop-zone-description {
+  font-size: 13px;
+}
+
+#select-file-input {
+  display: none;
+}
+
+.select-file-button {
+  border: 1px solid rgb(36, 61, 107);
+  color: white;
+  background: rgb(36, 61, 107);
+  padding: 10px 50px;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
 .footer-title {
   font-weight: bold;
 }
