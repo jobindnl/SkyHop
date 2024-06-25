@@ -78,6 +78,20 @@ select {
   padding: 25px;
 }
 
+.drop-zone-border {
+  border: 2px dotted lightgray;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.drop-zone-image {
+  width: 40px;
+}
+
 .drop-zone-description {
   font-size: 13px;
 }
