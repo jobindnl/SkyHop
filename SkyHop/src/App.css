@@ -162,12 +162,18 @@ select {
   display : none;
 }
 
-.tolerance-window {
+.toggle-wrapper {
   display: flex;
   align-items: center;
 }
 
+.tolerance-window-title {
+  font-size: 12px;
+  font-weight: bold;
+}
+
 .toggle-state {
   font-size: 12px;
+  margin: 0;
   margin-left: 10px;
 }
