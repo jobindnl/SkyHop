@@ -177,3 +177,23 @@ select {
   margin: 0;
   margin-left: 10px;
 }
+
+.button-cancel, .button-continue {
+  border-radius: 10px;
+  padding: 10px 60px;
+  font-size: 12px;
+}
+
+.button-cancel {
+  border: 2px solid rgb(234, 158, 10);
+  color: rgb(234, 158, 10);
+  background: white;
+  margin-left: 10px;
+}
+
+.button-continue {
+  border: 2px solid rgb(36, 61, 107);
+  color: white;
+  background: rgb(36, 61, 107);
+  margin-right: 10px;
+}
