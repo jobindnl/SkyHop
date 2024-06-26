@@ -106,6 +106,19 @@ select {
   color: rgb(96, 171, 140);
 }
 
+.client-select-wrapper p {
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.client-select-wrapper select {
+  width: 60%;
+}
+
+.select-row {
+  display: flex;
+}
+
 .drop-zone-description {
   font-size: 12px;
 }
