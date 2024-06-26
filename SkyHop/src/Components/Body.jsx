@@ -3,6 +3,8 @@ import DropdownNameInput from "./DropdownNameInput"
 import SelectFile from "./SelectFile"
 import ElapsedData from "./ElapsedData"
 import ToleranceWindow from "./ToleranceWindow"
+import SplitSchedule from "./SplitSchedule"
+import LocationChecking from "./LocationChecking"
 
 const Body = () => {
 
@@ -17,7 +19,8 @@ const Body = () => {
           <ToleranceWindow />
         </div>
         <div className="right">
-          <p>testing</p>
+          <SplitSchedule />
+          <LocationChecking />
         </div>
       </div>
       <Footer />
