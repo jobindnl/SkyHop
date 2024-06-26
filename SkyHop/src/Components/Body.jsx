@@ -5,6 +5,7 @@ import ElapsedData from "./ElapsedData"
 import ToleranceWindow from "./ToleranceWindow"
 import SplitSchedule from "./SplitSchedule"
 import LocationChecking from "./LocationChecking"
+import Client from "./Client"
 
 const Body = () => {
 
@@ -21,6 +22,7 @@ const Body = () => {
         <div className="right">
           <SplitSchedule />
           <LocationChecking />
+          <Client />
         </div>
       </div>
       <Footer />

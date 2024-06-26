@@ -23,7 +23,7 @@
 
 .logic-body {
   display: flex;
-  justify-content: space-around;
+  justify-content: left;
 }
 
 .close {
@@ -50,7 +50,7 @@ select {
 .select {
   position: relative;
   display: block;
-  width: 15em;
+  width: 100%;
   height: 2em;
   line-height: 3;
   overflow: hidden;
@@ -60,6 +60,10 @@ select {
 
 .close, .main-body {
   margin: 10px;
+}
+
+.main-body {
+  width: 100%;
 }
 
 .title {
@@ -92,7 +96,7 @@ select {
   width: 40px;
 }
 
-.elapsed-data>p, .location-checking-wrapper>p {
+.elapsed-data>p, .location-checking-wrapper>p, .client-wrapper>p {
   font-weight: bold;
   font-size: 12px;
 }
@@ -116,6 +120,10 @@ select {
   padding: 10px 50px;
   font-size: 14px;
   border-radius: 10px;
+}
+
+.footer-wrapper {
+  text-align: center;
 }
 
 .footer-title {
@@ -167,14 +175,24 @@ select {
   font-weight: bold;
 }
 
-.split-schedule-wrapper label {
-  font-size: 13px;
+.split-schedule-wrapper label, .client-wrapper label {
+  font-size: 12px;
 }
 
 .toggle-state {
   font-size: 12px;
   margin: 0;
   margin-left: 10px;
+}
+
+.left {
+  width: 50%;
+  margin-left: 20px;
+}
+
+.right {
+  width: 30%;
+  margin-left: 60px;
 }
 
 .button-cancel, .button-continue {

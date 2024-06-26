@@ -21,7 +21,6 @@ const Modal = () => {
       id={'modal'}
     >
       <div className="div-1">
-        <div className="close">+</div>
         <Body />
       </div>
     </ReactModal>
