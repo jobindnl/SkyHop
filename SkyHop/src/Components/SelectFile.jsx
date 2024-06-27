@@ -10,7 +10,7 @@ const SelectFile = () => {
   }
 
   return (
-    <div className="select-file">
+    <div className="select-file half-a-border-on-bottom">
       <p className="select-file-title">Select a manifest you would like to import</p>
       <div className="drop-zone-wrapper">
         <div className="drop-zone-border">

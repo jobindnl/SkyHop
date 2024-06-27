@@ -24,6 +24,13 @@
 .logic-body {
   display: flex;
   justify-content: left;
+  margin-top: 20px;
+}
+
+.half-a-border-on-bottom {
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, rgb(234, 234, 234) 60%, transparent 50%) 100% 1;
+  padding-bottom: 10px;
 }
 
 .close {
@@ -97,9 +104,9 @@ select {
   width: 40px;
 }
 
-.elapsed-data>p, .location-checking-wrapper>p, .client-wrapper>p {
+.elapsed-dates, .location-checking-data {
   font-weight: bold;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .elapsed-dates, .location-checking-data {
@@ -129,6 +136,18 @@ input[type='radio'] {
   align-items: center;
 }
 
+.client-select-wrapper p {
+  margin-right: 20px;
+}
+
+.client-select-wrapper div {
+  margin-right: 5px;
+}
+
+.radio-row input, .radio-row label {
+  margin-right: 10px;
+}
+
 input[type='radio']:before {
   content: '';
   display: block;
@@ -149,8 +168,12 @@ input[type='radio']:checked:before {
 }
 
 .select select {
-  width: 80%;
+  width: 100%;
   margin-right: 5px;
+}
+
+.select.half-a-border-on-bottom {
+  padding-bottom: 20px;
 }
 
 .select {
@@ -228,13 +251,19 @@ input[type='radio']:checked:before {
   align-items: center;
 }
 
-.tolerance-window-title, .split-schedule-title, .select-file-title {
-  font-size: 12px;
+.tolerance-window-title, .split-schedule-title, .select-file-title, .location-checking-title, .client-title, .elapsed-data-title {
+  font-size: 11px;
   font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .split-schedule-wrapper label, .client-wrapper label {
   font-size: 12px;
+}
+
+.client-wrapper .radio-row {
+  margin-bottom: 10px;
 }
 
 .toggle-state {

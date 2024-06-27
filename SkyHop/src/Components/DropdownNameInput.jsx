@@ -1,6 +1,6 @@
 const DropdownNameInput = () => {
   return (
-    <div className="select">
+    <div className="select half-a-border-on-bottom">
       <select>
         <option selected disabled>Select Import Name:</option>
         <option value="option1">Option 1</option>
