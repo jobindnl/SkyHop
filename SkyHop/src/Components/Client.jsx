@@ -1,11 +1,15 @@
+import clockImage from "../assets/clock.png"
+
 const Client = () => {
   return (
     <div className="client-wrapper">
-      <p className="client-title">Split schedule using social distancing?</p>
-      <input type="radio" name="drone" value="Single" />
-      <label for="Single">Single</label>
-      <input type="radio" name="drone" value="Multiple" />
-      <label for="Multiple">Multiple</label>
+      <p className="client-title">Client:</p>
+      <div className="radio-row">
+        <input type="radio" name="drone" value="Single" />
+        <label for="Single">Single</label>
+        <input type="radio" name="drone" value="Multiple" />
+        <label for="Multiple">Multiple</label>
+      </div>
       <div className="client-select-wrapper">
         <div className="select-row">
           <p>Testing Center 1</p>
@@ -17,6 +21,7 @@ const Client = () => {
               <option value="option3">Option 3</option>
             </select>
           </div>
+          <img src={clockImage} alt="" />
         </div>
         <div className="select-row">
           <p>Testing Center 2</p>
@@ -28,6 +33,7 @@ const Client = () => {
               <option value="option3">Option 3</option>
             </select>
           </div>
+          <img src={clockImage} alt="" />
         </div>
         <div className="select-row">
           <p>Testing Center 3</p>
@@ -39,6 +45,7 @@ const Client = () => {
               <option value="option3">Option 3</option>
             </select>
           </div>
+          <img src={clockImage} alt="" />
         </div>
         <div className="select-row">
           <p>Testing Center 4</p>
@@ -50,6 +57,7 @@ const Client = () => {
               <option value="option3">Option 3</option>
             </select>
           </div>
+          <img src={clockImage} alt="" />
         </div>
       </div>
     </div>

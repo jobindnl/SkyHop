@@ -2,10 +2,12 @@ const SplitSchedule = () => {
   return (
     <div className="split-schedule-wrapper">
       <p className="split-schedule-title">Split schedule using social distancing?</p>
-      <input type="radio" name="drone" value="Yes" />
-      <label for="Yes">Yes</label>
-      <input type="radio" name="drone" value="No" />
-      <label for="No">No</label>
+      <div className="radio-row">
+        <input type="radio" name="split-schedule-drone" value="split-schedule-Yes" />
+        <label for="split-schedule-Yes">Yes</label>
+        <input type="radio" name="split-schedule-drone" value="split-schedule-No" />
+        <label for="split-schedule-No">No</label>
+      </div>
     </div>
   )
 }
