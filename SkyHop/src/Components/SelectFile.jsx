@@ -3,14 +3,12 @@ import fileImage from "./../assets/fileImage.png"
 const SelectFile = () => {
   const dropHandler = (e) => {
     console.log('Dropped')
-  }
-
-  const dragOverHandler = (e) => {
-    console.log('Dragged')
+    e.preventDefault()
   }
 
   const handleUpload = (e) => {
     console.log('Upload')
+    e.preventDefault()
   }
 
   return (
@@ -22,7 +20,7 @@ const SelectFile = () => {
           <div
             id="drop-zone"
             onDrop={dropHandler}
-            onDragOver={dragOverHandler}>
+            >
             <p className="drop-zone-description">Drag & Drop Here Or <b>Browse</b></p>
           </div>
         </div>
