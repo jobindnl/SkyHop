@@ -2,11 +2,15 @@ import fileImage from "./../assets/fileImage.png"
 
 const SelectFile = () => {
   const dropHandler = (e) => {
-    e.preventDefault()
+    console.log('Dropped')
   }
 
   const dragOverHandler = (e) => {
-    e.preventDefault()
+    console.log('Dragged')
+  }
+
+  const handleUpload = (e) => {
+    console.log('Upload')
   }
 
   return (
@@ -22,8 +26,8 @@ const SelectFile = () => {
             <p className="drop-zone-description">Drag & Drop Here Or <b>Browse</b></p>
           </div>
         </div>
-        <input type="file" id="select-file-input" />
-        <label for="select-file-input" className="select-file-button">Upload Manifest</label>
+        <input onChange={handleUpload} type="file" id="select-file-input" />
+        <label htmlFor="select-file-input" className="select-file-button">Upload Manifest</label>
       </div>
     </div>
   )

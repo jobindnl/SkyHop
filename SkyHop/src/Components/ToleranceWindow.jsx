@@ -13,8 +13,8 @@ const ToleranceWindow = () => {
       <div className="tolerance-window-body-wrapper">
         <div className="tolerance-window-left">
           <div className="toggle-wrapper">
-            <input onChange={handleChange} type="checkbox" id="switch" class="checkbox" />
-            <label for="switch" class="toggle" />
+            <input onChange={handleChange} type="checkbox" id="switch" className="checkbox" />
+            <label htmlFor="switch" className="toggle" />
             <p className="toggle-state">Toggle {toggled ? "ON" : "OFF"}</p>
           </div>
         </div>

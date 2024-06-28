@@ -18,6 +18,7 @@ const Modal = () => {
     <ReactModal 
       isOpen={true}
       style={customStyles}
+      ariaHideApp={false}
       id={'modal'}
     >
       <div className="div-1">
