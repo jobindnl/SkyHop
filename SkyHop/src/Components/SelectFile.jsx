@@ -1,14 +1,18 @@
 import fileImage from "./../assets/fileImage.png"
 
 const SelectFile = () => {
-  const dropHandler = (e) => {
-    console.log('Dropped')
-    e.preventDefault()
+  const handleDrop = (input) => {
+    console.log('Dropped', input.target)
+    input.preventDefault()
   }
 
-  const handleUpload = (e) => {
-    console.log('Upload')
-    e.preventDefault()
+  const handleDrag = (input) => {
+    console.log('Dragged')
+    input.preventDefault()
+  }
+  const handleUpload = (input) => {
+    console.log('Upload', input.target.files)
+    input.preventDefault()
   }
 
   return (
@@ -16,10 +20,11 @@ const SelectFile = () => {
       <p className="select-file-title">Select a manifest you would like to import</p>
       <div className="drop-zone-wrapper">
         <div className="drop-zone-border">
-          <img src={fileImage} className="drop-zone-image" alt="file-icon" />
+          <img src={fileImage} id="image-file-upload" className="drop-zone-image" alt="file-icon" />
           <div
             id="drop-zone"
-            onDrop={dropHandler}
+            onDrop={handleDrop}
+            onDragOver={handleDrag}
             >
             <p className="drop-zone-description">Drag & Drop Here Or <b>Browse</b></p>
           </div>
