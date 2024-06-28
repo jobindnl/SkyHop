@@ -138,6 +138,10 @@ input[type='radio'] {
   align-items: center;
 }
 
+.tolerance-window-body-wrapper {
+  display: flex;
+}
+
 .client-select-wrapper p {
   margin-right: 20px;
 }
@@ -167,6 +171,19 @@ input[type='radio']:checked:before {
   height: 20px;
   width: 20px;
   opacity: .5;
+}
+
+.select-tolerance-level {
+  display: flex;
+  align-items: center;
+}
+
+.tolerance-window-left {
+  align-items: center;
+}
+
+.select-tolerance-level img {
+  margin-right: 10px;
 }
 
 .select-tolerance-level p {
@@ -255,6 +272,10 @@ input[type='radio']:checked:before {
 .toggle-wrapper {
   display: flex;
   align-items: center;
+  padding-top: 7px;
+  margin-right: 12px;
+  padding-right: 12px;
+  border-right: 1px solid rgb(36, 61, 107);
 }
 
 .tolerance-window-title, .split-schedule-title, .select-file-title, .location-checking-title, .client-title, .elapsed-data-title {
