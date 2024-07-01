@@ -2,7 +2,7 @@ import { useState } from "react"
 import clockImage from "../assets/clock.png"
 
 const ToleranceWindow = () => {
-  const [toggled, setToggle] = useState(false)
+  const [toggled, setToggle] = useState(true)
   const handleChange = () => {
     setToggle(!toggled);
   }
@@ -13,7 +13,7 @@ const ToleranceWindow = () => {
       <div className="tolerance-window-body-wrapper">
         <div className="tolerance-window-left">
           <div className="toggle-wrapper">
-            <input onChange={handleChange} type="checkbox" id="switch" className="checkbox" />
+            <input onChange={handleChange} checked={toggled} type="checkbox" id="switch" className="checkbox" />
             <label htmlFor="switch" className="toggle" />
             <p className="toggle-state">Toggle {toggled ? "ON" : "OFF"}</p>
           </div>
