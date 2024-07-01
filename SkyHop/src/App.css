@@ -216,7 +216,9 @@ input[type='radio']:checked:before {
 #select-file-input {
   display: none;
 }
-
+.select-file-button span {
+  color: white;
+}
 .select-file-button {
   border: 1px solid rgb(36, 61, 107);
   color: white;

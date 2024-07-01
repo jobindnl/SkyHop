@@ -1,8 +1,10 @@
+import { useState } from "react"
 import fileImage from "./../assets/fileImage.png"
 
 const SelectFile = () => {
   const handleDrop = (input) => {
     input.preventDefault()
+    setUploaded(true)
     console.log('Dropped', input.dataTransfer.items)
   }
 
@@ -12,8 +14,11 @@ const SelectFile = () => {
   }
   const handleUpload = (input) => {
     console.log('Upload', input.target.files)
+    setUploaded(true)
     input.preventDefault()
   }
+
+  const [uploaded, setUploaded] = useState(false)
 
   return (
     <div className="select-file half-a-border-on-bottom">
@@ -30,7 +35,7 @@ const SelectFile = () => {
           </div>
         </div>
         <label onChange={handleUpload} htmlFor="select-file-input" className="select-file-button">
-          Upload Manifest
+          {uploaded ? <span>Uploaded!</span> : <span>Upload Manifest</span>}
           <input  type="file" id="select-file-input" />
         </label>
       </div>
