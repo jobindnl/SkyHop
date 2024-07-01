@@ -6,12 +6,16 @@ import ToleranceWindow from "./ToleranceWindow"
 import SplitSchedule from "./SplitSchedule"
 import LocationChecking from "./LocationChecking"
 import Client from "./Client"
+import closeIcon from "../assets/closeIcon.jpeg"
 
 const Body = () => {
 
   return (
     <div className="main-body">
-      <p className="title" >Document Upload</p>
+      <div className="title-wrapper">
+        <img className="close-modal" src={closeIcon} />
+        <p className="title" >Document Upload</p>
+      </div>
       <div className="logic-body">
         <div className="left">
           <DropdownNameInput />
