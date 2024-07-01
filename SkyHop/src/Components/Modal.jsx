@@ -10,6 +10,7 @@ const Modal = () => {
       right: 'auto',
       bottom: 'auto',
       marginRight: '-50%',
+      borderRadius: '25px',
       transform: 'translate(-50%, -50%)',
     },
   }
