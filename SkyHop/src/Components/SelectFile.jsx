@@ -5,15 +5,13 @@ const SelectFile = () => {
   const handleDrop = (input) => {
     input.preventDefault()
     setUploaded(true)
-    console.log('Dropped', input.dataTransfer.items)
+    alert(input.dataTransfer.items[0].getAsFile().name + " Uploaded! ")
   }
 
   const handleDrag = (input) => {
-    console.log('Dragged')
     input.preventDefault()
   }
   const handleUpload = (input) => {
-    console.log('Upload', input.target.files)
     setUploaded(true)
     input.preventDefault()
   }
